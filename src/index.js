@@ -1,8 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+class Square extends React.Component {
+    render() {
+        return (
+            <button className="square">
+                {this.props.value}
+            </button>
+        );
+    }
+}
 
 ReactDOM.render(
   <React.StrictMode>
